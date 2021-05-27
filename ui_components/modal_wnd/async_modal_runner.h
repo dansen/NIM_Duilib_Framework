@@ -36,9 +36,9 @@ public:
 	bool DoModal(ModalWndBase *dlg);
 	void CancelModalThenExit();
 
-private:
+public:
 	template<class _Ty>
-	friend class std::_Ref_count_obj;
+	friend class std::_Ref_count_obj2;
 
 	friend class AsyncModalRunnerManager;
 	friend class std::shared_ptr<AsyncModalRunner>;
